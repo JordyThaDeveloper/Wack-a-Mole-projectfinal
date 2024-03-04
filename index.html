@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whack-a-Mole Game</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <h1>Whack-a-Mole!</h1>
+    <div id="control-panel">
+        <button id="start">Start Game</button>
+        <h2>Score: <span id="score">0</span></h2>
+        <h2><span id="timer">0</span> seconds left.</h2>
+    </div>
+    <div class="grid">
+      <div id="hole0" class="hole">
+        <div id="mole0" class="mole"></div>
+      </div>
+      <div id="hole1" class="hole">
+        <div id="mole1" class="mole"></div>
+      </div>
+      <!-- Add more holes and moles here -->
+      <div id="hole2" class="hole">
+        <div id="mole2" class="mole"></div>
+      </div>
+      <div id="hole3" class="hole">
+        <div id="mole3" class="mole"></div>
+      </div>
+      <!-- Add as many holes and moles as you want -->
+    </div>
+    <audio id="hitSound" src="./assets/hit.mp3"></audio>
+    <audio id="song" src="./assets/molesong.mp3" loop></audio>
+    <script src="./src/index.js"></script>
+</body>
+</html>
